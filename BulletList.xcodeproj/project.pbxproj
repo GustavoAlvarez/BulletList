@@ -15,6 +15,7 @@
 		BFBEF12D2256B4E6009C2EBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBEF12B2256B4E6009C2EBE /* Main.storyboard */; };
 		BFBEF12F2256B4EA009C2EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFBEF12E2256B4EA009C2EBE /* Assets.xcassets */; };
 		BFBEF1322256B4EA009C2EBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBEF1302256B4EA009C2EBE /* LaunchScreen.storyboard */; };
+		BFBEF1382256B863009C2EBE /* BulletList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBEF1372256B863009C2EBE /* BulletList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		BFBEF12E2256B4EA009C2EBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFBEF1312256B4EA009C2EBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFBEF1332256B4EA009C2EBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFBEF1372256B863009C2EBE /* BulletList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				BFBEF10A2256B416009C2EBE /* BulletList.h */,
 				BFBEF10B2256B416009C2EBE /* Info.plist */,
+				BFBEF1372256B863009C2EBE /* BulletList.swift */,
 			);
 			path = BulletList;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					BFBEF1062256B416009C2EBE = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					BFBEF10F2256B416009C2EBE = {
 						CreatedOnToolsVersion = 10.1;
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBEF1382256B863009C2EBE /* BulletList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		BFBEF11C2256B416009C2EBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -451,6 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gusadev.BulletList;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,6 +466,7 @@
 		BFBEF11D2256B416009C2EBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -483,6 +491,7 @@
 		BFBEF11F2256B416009C2EBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BulletListTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,6 +509,7 @@
 		BFBEF1202256B416009C2EBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BulletListTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
